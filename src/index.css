@@ -1,0 +1,74 @@
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* background: #fee3e6; */
+}
+
+/* dark theme */
+:root {
+  --color-bg: white;
+  --color-text: black;
+  --font-ui: "Lavishly Yours", cursive;
+}
+
+:root[data-theme="dark"] {
+  --color-bg: #0f172a;
+  --color-text: #e5e7eb;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+}
+
+/* Improve text rendering */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+/* Body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  background: #fee3e6;
+}
+
+/* Media elements */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Form elements */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Lists */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}

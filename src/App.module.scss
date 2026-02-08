@@ -1,0 +1,108 @@
+.main {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("./assets/bg-wallpaper.webp");
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+  }
+
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .gif {
+      width: 300px;
+      height: auto;
+      margin: auto;
+      border-radius: 10%;
+    }
+    h1 {
+      font-family: "Playwrite NZ Basic", cursive;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      text-align: center;
+      margin-top: 15px;
+    }
+    .buttons {
+      margin-top: 15px;
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.buttons {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+
+  .yesButton {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 12px 28px;
+    color: white;
+    background: linear-gradient(45deg, #ff6fa3, #ff4d6d);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(255, 77, 109, 0.4);
+    min-width: 125px;
+
+    &:hover {
+      background: linear-gradient(45deg, #ff4d6d, #ff2a55);
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(255, 77, 109, 0.6);
+    }
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: 0 4px 12px rgba(255, 77, 109, 0.4);
+    }
+  }
+
+  .noButton {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 12px 28px;
+    color: white;
+    background: linear-gradient(
+      45deg,
+      #ff9aa2,
+      #ff6f91
+    ); /* slightly different pink */
+    border: none;
+    border-radius: 12px;
+    min-width: 125px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(255, 105, 135, 0.4);
+    position: relative;
+
+    &:hover {
+      background: linear-gradient(45deg, #ff6f91, #ff4d6d);
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(255, 105, 135, 0.6);
+    }
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: 0 4px 12px rgba(255, 105, 135, 0.4);
+    }
+  }
+}
